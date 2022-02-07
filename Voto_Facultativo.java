@@ -1,4 +1,7 @@
- private void btnSituActionPerformed(java.awt.event.ActionEvent evt) {                                        
+//Criacão de interface no SWING 
+
+private void btnSituActionPer
+ formed(java.awt.event.ActionEvent evt) {                                        
         int ano = Integer.parseInt(txtAno.getText());
         int idade = 2022 - ano;
         lblIdade.setText(Integer.toString(idade));
