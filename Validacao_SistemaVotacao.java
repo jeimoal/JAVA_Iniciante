@@ -7,18 +7,16 @@ public class SistemaVotacao {
         System.out.print("Qual ano você nasceu? ");
         int ano = teclado.nextInt();
         int idade = 2022 - ano;
-        System.out.println("Sua idade é " + idade);
+        System.out.println("Você tem " + idade + " anos");
         if (idade < 16){
-            System.out.println("Menor de idade - Voto proibido");
+            System.out.println("-> Voto proibido");
         }
-        if (idade >= 16 && idade < 18) {
-            System.out.println("Adolescente - Voto Facultativo");
+        else
+            if ((idade >= 16 && idade < 18) || (idade > 70)) {
+                    System.out.println("-> Voto Facultativo");
+                }
+        else {
+            System.out.println("Voto obrigatório");
         }
-        if (idade >= 18 && idade <= 70) {
-            System.out.println("Voto Obrigatório");
-        }
-        if (idade > 70) {
-            System.out.println("Idoso - Voto facultativo");
-        }        
-    }    
+    }
 }
